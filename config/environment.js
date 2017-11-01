@@ -50,7 +50,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/ember-deployment-guide';
+    ENV.rootURL = '/betterSetter';
     ENV.locationType = 'hash';
     ENV.apiHost = '<https://ghastly-skeleton-14353.herokuapp.com/>';
   }
