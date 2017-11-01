@@ -596,6 +596,15 @@ define('betterSetter/tests/routes/change-password.jshint.lint-test', [], functio
     assert.ok(true, 'routes/change-password.js should pass jshint.');
   });
 });
+define('betterSetter/tests/routes/exercises.jshint.lint-test', [], function () {
+  'use strict';
+
+  QUnit.module('JSHint | routes/exercises.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/exercises.js should pass jshint.');
+  });
+});
 define('betterSetter/tests/routes/sign-in.jshint.lint-test', [], function () {
   'use strict';
 
@@ -855,6 +864,27 @@ define('betterSetter/tests/unit/routes/change-password-test.jshint.lint-test', [
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/change-password-test.js should pass jshint.');
+  });
+});
+define('betterSetter/tests/unit/routes/exercises-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('route:exercises', 'Unit | Route | exercises', {
+    // Specify the other units that are required for this test.
+    // needs: ['controller:foo']
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var route = this.subject();
+    assert.ok(route);
+  });
+});
+define('betterSetter/tests/unit/routes/exercises-test.jshint.lint-test', [], function () {
+  'use strict';
+
+  QUnit.module('JSHint | unit/routes/exercises-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/routes/exercises-test.js should pass jshint.');
   });
 });
 define('betterSetter/tests/unit/routes/sign-in-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
