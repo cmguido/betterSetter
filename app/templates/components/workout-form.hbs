@@ -1,0 +1,15 @@
+<h1>Workout</h1>
+<form {{action 'createWorkout' on='submit'}}>
+  {{input placeholder='Date'
+  value=newWorkout.date}}
+  {{input placeholder='Day`s workout, i.e. chest, legs etc'
+  value=newWorkout.workout}}
+  {{input placeholder='Amount, i.e. weight, distance'
+  value=newWorkout.amount}}
+  {{input placeholder='How many reps or laps'
+  value=newWorkout.reps}}
+  {{input placeholder='Time of workout'
+  value=newWorkout.time}}
+
+  <button type='submit'>Save</button>
+</form>
