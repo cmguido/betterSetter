@@ -729,6 +729,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("betterSetter/app")["default"].create({"name":"betterSetter","version":"0.0.0+41bc5d0e"});
+  require("betterSetter/app")["default"].create({"name":"betterSetter","version":"0.0.0+fd48bbec"});
 }
 //# sourceMappingURL=betterSetter.map
