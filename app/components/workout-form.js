@@ -10,9 +10,10 @@ newWorkout: {
   hidden: false
 },
 actions: {
-  createWorkout(exercise) {
+  createWorkout() {
     this.sendAction('createWorkout', this.get('newWorkout'));
-    this.set('newWorkout');
+    return this.set([['newWorkout.date', null], ['newWorkout.workout', null], ['newWorkout.amount', null], ['newWorkout.reps', null], ['newWorkout.time', null]]);
+    console.log(newWorkout)
   },
 }
 });
