@@ -6,10 +6,9 @@ export default Ember.Route.extend({
     return this.get('store').findAll('exercise');
   },
   actions: {
-  createWorkout (exercise) {
-    console.log(exercise)
-    let newWorkout = this.get('store').createRecord('exercise', exercise);
-    newWorkout.save();
+    createWorkout (exercise) {
+      let newWorkout = this.get('store').createRecord('exercise', exercise);
+      newWorkout.save();
+    }
   }
-}
 });

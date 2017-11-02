@@ -11,9 +11,8 @@ newWorkout: {
 },
 actions: {
   createWorkout() {
-    this.sendAction('createWorkout', this.get('newWorkout'));
-    return this.set([['newWorkout.date', null], ['newWorkout.workout', null], ['newWorkout.amount', null], ['newWorkout.reps', null], ['newWorkout.time', null]]);
-    console.log(newWorkout)
+   this.sendAction('createWorkout', this.get('newWorkout'));
+   return this.set('newWorkout', null)
   },
 }
 });
