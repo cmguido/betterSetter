@@ -9,7 +9,7 @@ Router.map(function () {
   this.route('sign-up');
   this.route('sign-in');
   this.route('change-password');
-  this.route('users');
+  // this.route('users');
   this.route('exercises');
   this.route('about');
   this.route('exercise', { path: 'exercises/:exercise_id' });
