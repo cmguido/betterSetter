@@ -1,17 +1,9 @@
 <h3>Past Exercises</h3>
 {{workout-form createWorkout='createWorkout'}}
+
 <ul>
   {{#each model as |exercise|}}
-  <li><h3>{{exercise.date}}</h3></li>
-  <li><h4>{{exercise.workout}}</h4></li>
-  <li><h4>{{exercise.amount}}</h4></li>
-  <li><h4>{{exercise.reps}}</h4></li>
-  <li><h4>{{exercise.time}}</h4></li>
-  <br>
+  {{#link-to 'exercise' exercise}} <h3>{{exercise.date}}</h3>
+  {{/link-to}}
   {{/each}}
 </ul>
-{{!-- <ul>
-  {{#each model as |exercise|}}
-    {{list-title list=list deleteList='deleteList'}}
-  {{/each}}
-</ul> --}}

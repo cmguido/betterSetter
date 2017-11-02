@@ -13,6 +13,8 @@ actions: {
   createWorkout() {
    this.sendAction('createWorkout', this.get('newWorkout'));
    return this.set('newWorkout', null)
+   .then(() => this.get('flashMessages').success('Workout created!'))
+
   },
 }
 });
