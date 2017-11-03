@@ -11,5 +11,9 @@ import Ember from 'ember';
             .then(() =>
               this.transitionTo('exercises'));
       },
+      editWorkout () {
+        let exercise = this.currentModel
+    exercise.save();
   }
+}
 });

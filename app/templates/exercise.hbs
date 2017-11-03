@@ -1,7 +1,10 @@
-<h3>{{model.date}}</h3>
-<li><h4>{{model.workout}}</h4></li>
-<li><h4>{{model.amount}}</h4></li>
-<li><h4>{{model.reps}}</h4></li>
-<li><h4>{{model.time}}</h4></li>
+
+<h3>Date{{input value=model.date}}</h3>
+<h3>Workout{{input value=model.workout}}</h3>
+<h3>Amount{{input value=model.amount}}</h3>
+<h3>Reps{{input value=model.reps}}</h3>
+<h3>Time{{input value=model.time}}</h3>
 <br>
 <button class='btn btn-danger' {{action 'deleteWorkout'}}>Delete</button>
+{{!-- {{edit-workout editWorkout=editWorkout}} --}}
+<button type='submit' class='btn btn-warning' {{action 'editWorkout'}}>Save</button>
