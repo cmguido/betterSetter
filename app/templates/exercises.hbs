@@ -1,6 +1,5 @@
-<h3>Past Exercises</h3>
 {{workout-form createWorkout='createWorkout'}}
-
+<h3>Past Workouts</h3>
 <ul>
   {{#each model as |exercise|}}
   {{#link-to 'exercise' exercise}} <h3>{{exercise.date}}</h3>

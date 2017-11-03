@@ -1,6 +1,6 @@
 <h1>Workout</h1>
 <form {{action 'createWorkout' on='submit'}}>
-  {{input placeholder='Date dd/mm/yyyy'
+  {{input type='date' placeholder='Date dd/mm/yyyy'
   value=newWorkout.date}}
   {{input placeholder='Day`s workout, i.e. chest, legs etc'
   value=newWorkout.workout}}
@@ -11,5 +11,5 @@
   {{input placeholder='Time of workout'
   value=newWorkout.time}}
 
-  <button type='submit'>Enter Workout</button>
+  <button class='btn btn-success' type='submit'>Enter Workout</button>
 </form>
