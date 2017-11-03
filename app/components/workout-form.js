@@ -14,8 +14,7 @@ newWorkout: {
 actions: {
   createWorkout() {
    this.sendAction('createWorkout', this.get('newWorkout'));
-   this.set('newWorkout', null)
-    // .then(() => this.get('flashMessages').success('Workout created!'))
+   return this.set('newWorkout', null)
   },
 }
 });
