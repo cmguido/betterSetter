@@ -1,74 +1,46 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+### APP DESCRIPTION:
+ betterSetter is an app built to track progress during different work-out phases. Mark down when and what you did so you can easily call up your last workout to get a better set every week.
 
-# Authentication in Ember
+ <img src="images/betterSetter.png" alt="betterSetter screenshot" style="width:500px;height:600px;">
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
 
-## Prerequisites
+### LINKS:
+  | betterSetter: https://cmguido.github.io/betterSetter/#/exercises |
+  | Front-end repo: https://github.com/cmguido/betterSetter          |
+  | Back-end repo: https://github.com/cmguido/betterSetter-backend   |
+  | Deployed back-end: https://ghastly-skeleton-14353.herokuapp.com/ |
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
 
-## Objectives
+### USER STORIES
+ - A user will sign-up, sign-in, change-password and sign-out so that they
+  have full auth rights with their account.
+ - A user will be able to create a day so that can track which days they worked
+ out.
+ - A user will be able to add information when they create a day so they what
+ what exercise(s) they did that day.
+ - A user will be able to delete a day if they messed up the information so
+ they can start again if they want.
+ - A user will be able to edit information from a specific day so if they
+ planned to do a workout ahead of time and couldn't/did more they can adjust the
+ information so it is correct.
+ - A user will be able to see past workouts so they can check progress or
+ maintain their current workout regiment with the correct times/weights.
 
-By the end of this, developers should be able to:
+ ### REACH USER STORIES
+ - A user will be able to search google from within the app to find any
+ exercises they don't know so they can learn what it is. (clicking would lead
+ outside of app)
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+### Link to wireframe & ERD: https://imgur.com/a/QP0xg
 
-## Preparation
+### PLAN & PROBLEMS
+  - I started by creating some user stories to track how my app would perform, basic auth and then CRUD actions to make sure a user could create, view, update and delete any workout they wanted.
+  - Following this initial planning stage, I used it to create and set up the back-end via heroku and rails. This deployment went smoothly.
+  - Next I had to set up the front-end repo, which was not too bad until I had to deploy ember, at which point it kept hitting errors. I went back and made sure every name matched, and it was pointing to my repo, and had the correct back-end URL. Ultimately it was solved by deleting the local copy and starting over again, once again going step by step through the ember deployment guide.
+  - Things went smoothly once again until I had to make my edit workout feature. For some reason, when I passed the action up it couldn't find the data to use. To solve this, in my update function I used 'this.currentModel' to make sure it updated the correct and current object. It was a feature I used for create as well.
+  - Once I completed these features I attempted to start my third-party-API google search. I created a route for this and added the necessary code via the google docs for custom-search. It works for the most part with it vaguely not appearing at times, but will if 'search' in the navbar is clicked on again. This is something I am going to continue to look into as I receive no error messages regarding it.
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Start any API based on a recent version of the [Rails API
-    Template](https://github.com/ga-wdi-boston/rails-api-template) or the
-    [Express API
-    Template](https://github.com/ga-wdi-boston/express-api-template).
-1.  Start the front-end server with `ember server`.
+### TECH USED
+  - Ember, Ruby on Rails, JavaScript, HTML, CSS, Handlebars, Git, GitHub, Heroku.
 
-## From end to end
-
-Watch as I sign up for a new account on our demo app.
-
-*Other than the flash messages on the page, did anything change?  What about in
-the Chrome Developer Tools?*
-
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
-
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it's implemented.
-
-## Follow Along
-
-Let's walk through file by file to see what's happening.  I will ask
-developers to guide me through the files while correcting any misunderstandings.
-
-First let's start down the template and component trail, then we'll work our way
-up with actions.
-
-*Remember: Data down, actions up.*
-
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
-
-## Additional Resources
-
--   [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an
-    API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+### Link to wireframe & ERD: https://imgur.com/a/QP0xg

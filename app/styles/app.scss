@@ -20,15 +20,6 @@ body {
   a:hover {
     background-color: rgb(0, 160, 250);
   }
-  a:active {
-    color: rgba(17, 137, 189, 0.38);
-  }
-  a:focus {
-    background-color: transparent;
-  }
-  a:active {
-    background-color: transparent;
-  }
 
 }
 
@@ -42,6 +33,16 @@ body {
   a:active {
     background-color: transparent;
   }
+}
+
+.sr-only {
+  background-color: rgb(0, 160, 250);
+
+}
+
+.icon-bar {
+  background-color: rgb(0, 160, 250);
+
 }
 
 .navbar-brand {
