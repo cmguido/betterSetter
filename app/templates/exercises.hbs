@@ -2,9 +2,12 @@
 
 {{workout-form createWorkout='createWorkout'}}
 <h3>Past Workouts</h3>
+
 <ul>
+  <article>
   {{#each model as |exercise|}}
   {{#link-to 'exercise' exercise}} <h3>{{exercise.date}}</h3>
   {{/link-to}}
   {{/each}}
+</article>
 </ul>
