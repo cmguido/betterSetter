@@ -57,7 +57,8 @@ body {
 }
 
 .past {
-  color: rgb(0, 0, 0)
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 8px black;
 }
 
 section {
@@ -69,7 +70,8 @@ section {
 
 
   h3 {
-    color: rgb(24, 1, 164);
+    color: rgb(255, 176, 0);
+    text-shadow: 2px 2px 12px black;
     padding: 5px;
     margin: 10px;
     border-top: 5px solid rgba(26, 52, 9, 0.75);
@@ -78,4 +80,9 @@ section {
     border-radius: 8px;
     width: 70%
   }
+}
+
+.work {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 4px 9px black;
 }
