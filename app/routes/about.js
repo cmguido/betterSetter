@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model () {
-    console.log(this.get('store').findAll('exercise'));
+    // console.log(this.get('store').findAll('exercise'));
     return this.get('store').findAll('exercise');
   },
   actions: {
@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       newWorkout.save();
     },
     deleteWorkout(exercise) {
-      console.log('exercise is ', exercise)
+      // console.log('exercise is ', exercise)
       exercise.destroyRecord();
     }
   }
